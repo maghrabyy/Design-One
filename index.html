@@ -4,10 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>redirecting</title>
-    <meta http-equiv="refresh" content="0; url=https://maghrabyy.github.io/bootstrap-test/Pages/index.html">
+    <title>Bootstrap</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Lobster+Two&family=Montserrat+Alternates&family=Righteous&family=Ubuntu&display=swap" rel="stylesheet">
+    <!-- Bootstrap & CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/style.css">
+    <!-- Bootstrap script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/52f4839422.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
+    <header>
+        <div class="container-fluid" id="SectionOne">
+        <!--NavBar-->
+        <nav class="navbar navbar-expand-md navbar-dark">
+                <a class="navbar-brand" href="#"><img src="Assets/Images/pmLogo.png" alt="PocketMechanic-Logo" width="60" height="60"> Pocket Mechanic</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Download</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Services
+                              </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a  class="dropdown-item" href="#">Spare-part shop</a></li>
+                                <li><a  class="dropdown-item" href="#">Vehicle Maintenance services</a></li>
+                           </ul>
+                        </li>
+                    </ul>
+                  </div>
+        </nav>
+        <div class="row">
+            <div class="col-lg-6 align-self-center">
+                <h1 class="text-light">a professional maintenance whereever your wheels takes you.</h1>
+                <button type="button" class="btn btn-dark btn-lg me-lg-2"><i class="fa-brands fa-apple"></i> Download</button>
+                <button type="button" class="btn btn-outline-light btn-lg"><i class="fa-brands fa-google-play"></i> Download</button>                
+            </div>
+            <div class="col-lg-6">
+                    <img src="Assets/Images/smartphone.png" id="smartPhonePic" alt="">
+            </div>
+        </div>
+    </div>
+    </header>
     
 </body>
 </html>
