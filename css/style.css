@@ -1,0 +1,173 @@
+/*
+font-family: 'Gruppo', cursive;
+font-family: 'Lobster Two', cursive;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Nunito', sans-serif;
+font-family: 'Righteous', cursive;
+font-family: 'Ubuntu', sans-serif;
+*/
+
+:root{
+    --dark-color: #2C3639;
+    --light-color: #DCD7C9;
+    --grey-color: #8f8f8f;
+    --purple-color: #513252;
+    --pink-color: #CA4E79;
+}
+
+p{
+   font-family: 'Montserrat Alternates', sans-serif;
+}
+
+h1,h2,h3{
+    font-family: 'Righteous', cursive;
+}
+
+hr{
+    width: 320px;
+    margin: 35px auto 0;
+}
+
+.main-btn{
+    background-color: var(--purple-color);
+    color: var(--light-color);
+}
+
+.main-btn:hover{
+    background-color: #372038;
+    color: var(--light-color);
+    border-color: #372038;
+}
+
+/*dark space*/
+.darkspace{
+    background-color: var(--dark-color);
+}
+
+.darkspace hr{
+    color: #DCD7C9;
+}
+
+.darkspace p{
+    color: var(--light-color);
+}
+/*light space*/
+.lightspace{
+    background-color: var(--light-color);
+}
+
+.lightspace hr{
+    color: var(--dark-color);
+}
+
+.lightspace p{
+    color: var(--dark-color);
+}
+
+/*Navbar*/
+.navbar-brand {
+    font-family: 'Righteous', cursive;
+    font-size: 1.5rem;
+}
+
+.navbar-brand:hover{
+    color: #E4DCCF;
+}
+
+.nav-item{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.search{ 
+    border-left: 1px solid var(--light-color);
+}
+
+.search .fa-magnifying-glass{
+    color: var(--light-color);
+    cursor: pointer;
+}
+.search .fa-magnifying-glass:hover{
+    color: var(--light-color);
+    cursor: pointer;
+    color: white;
+}
+
+/*Landing*/
+.landing{
+    min-height: calc(100vh - 77px);
+}
+
+/*Middle*/
+.middle{
+    min-height: calc(100vh - 77px);
+}
+
+/*Features*/
+.features{
+    min-height: calc(100vh - 77px);
+}
+
+.features .fa-solid:hover{
+    color: var(--pink-color);
+}
+
+/*Portfolio*/
+.portfolio ul li{
+    font-family: 'Montserrat Alternates', sans-serif;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.portfolio ul .active{
+    background-color: var(--purple-color);
+    color: var(--light-color);
+}
+
+.portfolio li:hover:not(.active){
+    color: var(--grey-color);
+}
+
+
+.projectbox{
+    position: relative;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projectbox::before{
+    content: attr(project-name);
+    font-family: 'Righteous', cursive;
+    font-size: 1.8rem;
+    color: var(--light-color);
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    background-color: #5a0f5c6b;
+    transition: 0.3s;
+    transform: translateX(calc(-100% - 20px));
+    cursor: pointer;
+}
+
+.projectbox:hover::before{
+    transform: translateX(0);
+}
+
+/*Team*/
+.teamMember{
+    height: 400px;
+}
+
+.teamMember img{
+    min-height: 200px;
+}
+
+.teamText{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}

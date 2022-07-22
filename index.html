@@ -4,70 +4,260 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bootstrap</title>
-    <!-- Fonts -->
+    <title>Alienwere</title>
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!--Font Awesome icons-->
+    <script src="https://kit.fontawesome.com/52f4839422.js" crossorigin="anonymous"></script>
+    <!--CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Lobster+Two&family=Montserrat+Alternates&family=Righteous&family=Ubuntu&display=swap" rel="stylesheet">
-    <!-- Bootstrap & CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <!-- Bootstrap script -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <!--Font Awesome-->
-    <script src="https://kit.fontawesome.com/52f4839422.js" crossorigin="anonymous"></script>
-    
+    <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Lobster+Two&family=Montserrat+Alternates&family=Nunito:ital@1&family=Righteous&family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="container-fluid" id="SectionOne">
-        <!--NavBar-->
-        <nav class="navbar navbar-expand-md navbar-dark">
-                <a class="navbar-brand" href="#"><img src="Assets/Images/pmLogo.png" alt="PocketMechanic-Logo" width="60" height="60"> Pocket Mechanic</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-                  <div class="collapse navbar-collapse" id="navbarSupportedContent"> 
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">About us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Download</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Services
-                              </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a  class="dropdown-item" href="#">Spare-part shop</a></li>
-                                <li><a  class="dropdown-item" href="#">Vehicle Maintenance services</a></li>
-                           </ul>
-                        </li>
-                    </ul>
-                  </div>
-        </nav>
-        <div class="row">
-            <div class="col-lg-6 align-self-center">
-                <h1 class="text-light">a professional maintenance whereever your wheels takes you.</h1>
-                <div class="row">
-                    <div class="col">
-                        <button type="button" class="btn btn-dark btn-lg"><i class="fa-brands fa-apple"></i> Download</button>
-                    </div>
-                    <div class="col">
-                        <button type="button" class="btn btn-outline-light btn-lg"><i class="fa-brands fa-google-play"></i> Download</button>       
-                    </div>
-                </div>         
+    <!--Navbar Start-->
+    <nav class="navbar darkspace navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"><i class="fa-brands fa-reddit-alien fa-2x"></i> Alienwere</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-burger"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto ">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Download</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Serivces</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item d-block d-lg-none ">
+                <a class="nav-link text-danger" href="pages/welcome.html">Logout</a>
+              </li>
+            </ul>
+            <div class="search ms-2 ps-3 pe-3 d-none d-lg-block">
+                <i class="fa-solid fa-magnifying-glass"></i>
             </div>
-            <div class="col-lg-6">
-                    <img src="Assets/Images/smartphone.png" id="smartPhonePic" alt="">
-            </div>
+            <a href="pages/welcome.html" class="btn btn-danger ms-2 d-none d-lg-block">Logout</a>
+          </div>
+        </div>
+      </nav>
+      <!--Navbar End-->
+
+      <!-- Landing Start -->
+    <div class="landing darkspace d-flex flex-column justify-content-center">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-4 text-light text-center">
+                    <h1 class="fs-2">Lorem ipsum dolor sit.</h1>
+                    <p class="fs-5 mb-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi quos minima porro optio odio!</p>
+                    <a href="#" class="btn btn-success rounded-pill w-100 p-2">Get Started</a>
+                </div>
+                <div class="col-lg-4">
+                    <img src="assets/images/alien.png" class="mt-3 img-fluid" alt="alien">
+                </div>
+            </div>    
         </div>
     </div>
-    </header>
+      <!-- Landing End -->
+
+      <!-- Middle Start -->
+      <div class="middle lightspace d-flex align-items-center">
+        <div class="container">
+            <div class="row text-center justify-content-around align-items-center">
+                <div class="col-lg-3 col-md-5">
+                    <img src="assets/images/cat.png" class="img-fluid mt-4 mb-4" alt="grey cat">
+                    <h1>First Meow</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam obcaecati similique rem dolorum odit non qui quam itaque quibusdam quisquam?</p>
+                </div>
+                <div class="col-lg-3 col-md-5">
+                    <img src="assets/images/happycat.png" class="img-fluid mt-4 mb-4" alt="grey cat">
+                    <h1>Second Meow</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias esse assumenda perspiciatis asperiores? Nihil delectus asperiores sapiente.</p>
+                </div>
+                <div class="col-lg-3 mt-lg-5 col-md-5">
+                    <img src="assets/images/blackcat.png" class="img-fluid mt-4 mb-4" alt="grey cat">
+                    <h1>Third Meow</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis obcaecati deleniti magnam voluptas consequatur inventore vitae maxime repellat! Voluptas doloribus accusamus illo!</p>
+                </div>
+            </div>
+          </div>
+      </div>
+      <!-- Middle End -->
     
+      <!-- Features Start -->
+      <div class="features darkspace d-flex align-items-center">
+        <div class="container">
+          <div class="title text-center pt-5 pb-5">
+            <h2 class="text-light">Our features</h2>
+            <p class="text-white-50 fs-5">We provide a set of vehicle maintenance services.</p>
+            <hr>
+          </div>
+          <div class="row justify-content-around align-items-center text-center text-light">
+            <div class="col-lg-3 col-md-5">
+              <i class="fa-solid fa-map-location-dot fa-8x mt-4 mb-4"></i>
+              <h3>Nearby Mechanic</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis obcaecati deleniti magnam voluptas consequatur inventore vitae maxime repellat! Voluptas doloribus accusamus illo!</p>
+            </div>
+            <div class="col-lg-3 col-md-5">
+              <i class="fa-solid fa-wrench fa-8x mt-4 mb-4"></i>
+              <h3>Request Mechanic</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis obcaecati deleniti magnam voluptas consequatur inventore vitae maxime repellat! Voluptas doloribus accusamus illo!</p>
+            </div>
+            <div class="col-lg-3 col-md-5">
+              <i class="fa-solid fa-truck-pickup fa-8x mt-4 mb-4"></i>
+              <h3>Request Tow-truck</h3>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis obcaecati deleniti magnam voluptas consequatur inventore vitae maxime repellat! Voluptas doloribus accusamus illo!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Features End -->
+
+      <!-- Portfolio Start -->
+      <div class="portfolio lightspace">
+        <div class="container">
+          <div class="title text-center pt-5">
+            <h2>Our projects</h2>
+            <p class="text-black-50 fs-5">Our several projects on different fields.</p>
+            <hr class="text-black">
+          </div>
+          <ul class="list-unstyled d-flex justify-content-center pt-5 pb-5">
+            <li class="active rounded-pill">All</li>
+            <li>Websites</li>
+            <li>Mobile Apps</li>
+            <li>Games</li>
+          </ul>
+          <div class="row justify-content-center pb-4">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="projectbox" project-name = "Pocket Mechanic">
+                <img src="assets/images/mechanic.png" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="projectbox" project-name = "Emo Girl">
+                <img src="assets/images/emogirl.png" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="projectbox" project-name = "Skater Boi">
+                <img src="assets/images/skater.png" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="projectbox" project-name = "Hell Riders">
+                <img src="assets/images/motorbike.png" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="projectbox" project-name = "Guiter Tuner">
+                <img src="assets/images/electric-guitar.png" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="projectbox" project-name = "Ghost Buster">
+                <img src="assets/images/ghost.png" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="projectbox" project-name = "Need for speed">
+                <img src="assets/images/sport-car.png" class="img-fluid" alt="">
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-3">
+              <div class="projectbox" project-name = "Counter Strike">
+                <img src="assets/images/rifle.png" class="img-fluid" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="d-flex justify-content-center mt-4 pb-4">
+            <a href="#" class="btn main-btn p-2">Show more</a>
+          </div>
+        </div>
+      </div>
+      <!-- Portfolio End -->
+
+      <!-- About us Start -->
+      <div class="aboutus darkspace">
+        <div class="container">
+          <div class="title text-center pt-5 pb-5">
+            <h2 class="text-light">About us</h2>
+            <p class="text-white-50 fs-5">What about us?</p>
+            <hr>
+          </div>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-md-4 text-center text-md-start order-md-1 order-2">
+              <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum modi repellendus repellat nemo necessitatibus architecto, facilis nisi, dignissimos, maxime veritatis qui harum sequi ipsa porro in aut laborum ab corporis dolor quos illum earum!</p>
+              <a href="" class="btn main-btn p-2 w-50 mb-md-0 mb-4">View more</a>
+            </div>
+            <div class="col-md-4 text-center text-md-start order-md-2 order-1">
+              <img src="assets/images/teamwork.png" class="img-fluid" alt="">
+            </div>
+          </div>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-md-4 text-center text-md-end order-md-2 order-2">
+              <p class="mb-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum modi repellendus repellat nemo necessitatibus architecto, facilis nisi, dignissimos, maxime veritatis qui harum sequi ipsa porro in aut laborum ab corporis dolor quos illum earum!</p>
+              <a href="" class="btn main-btn p-2 w-50 mb-md-0 mb-4">View more</a>
+            </div>
+            <div class="col-md-4 text-center text-md-end order-md-1 order-1">
+              <img src="assets/images/laptop.png" class="img-fluid" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- About us End -->
+      
+      <!-- Team Start -->
+      <div class="team lightspace pb-5 text-center">
+        <div class="container">
+          <div class="title text-center pt-5 pb-5">
+            <h2 class="text-dark">Our Team</h2>
+            <p class="fs-5">Who we are?</p>
+            <hr>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 col-6 mb-3">
+              <div class="teamMember bg-dark d-flex flex-column justify-content-start">
+                <img src="assets/images/hisoka.png" class="img-fluid" alt="">
+                <h2 class="teamText">Hisoka</h2>
+                <p class="text-white-50 p-2">"Bungee Gum has the properties of both rubber and gum."</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6 mb-3">
+              <div class="teamMember bg-dark d-flex flex-column justify-content-start">
+                <img src="assets/images/killua.png" class="img-fluid" alt="">
+                <h2 class="teamText">Killua</h2>
+                <p class="text-white-50 p-2">“People only find me interesting because they can’t tell whether I’m serious or not.”</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6 mb-3">
+              <div class="teamMember bg-dark d-flex flex-column justify-content-start">
+                <img src="assets/images/levi.png" class="img-fluid" alt="">
+                <h2 class="teamText">Levi</h2>
+                <p class="text-white-50 p-2">"Give up on your dreams and die."</p>
+              </div>
+            </div>
+            <div class="col-lg-3 col-6 mb-3">
+              <div class="teamMember bg-dark d-flex flex-column justify-content-start">
+                <img src="assets/images/lightyagami.png" class="img-fluid" alt="">
+                <h2 class="teamText">Light Yagami</h2>
+                <p class="text-white-50 p-2">"I'm ridding the world of evil and creating a utopia. No matter how much time i have, it won't be enough."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Team End -->
 </body>
 </html>

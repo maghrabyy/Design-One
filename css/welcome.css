@@ -1,0 +1,9 @@
+body{
+    background-color: khaki;
+    min-height: 100vh;
+}
+
+.login{
+    border-radius: 12px;
+}
+
