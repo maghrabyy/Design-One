@@ -116,6 +116,8 @@ hr{
     font-family: 'Montserrat Alternates', sans-serif;
     padding: 0.5rem 1rem;
     cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
 .portfolio ul .active{
@@ -160,7 +162,7 @@ hr{
 
 /*Team*/
 .teamMember{
-    height: 400px;
+    height: 440px;
 }
 
 .teamMember img{
