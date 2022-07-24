@@ -13,6 +13,8 @@ font-family: 'Ubuntu', sans-serif;
     --grey-color: #8f8f8f;
     --purple-color: #513252;
     --pink-color: #CA4E79;
+    --subscribe-color: #FEFBF6;
+    --blue-color: #1F4690;
 }
 
 p{
@@ -65,7 +67,7 @@ hr{
 }
 
 /*Navbar*/
-.navbar-brand {
+.brand {
     font-family: 'Righteous', cursive;
     font-size: 1.5rem;
 }
@@ -152,12 +154,12 @@ hr{
     height: calc(100% - 10px);
     background-color: #5a0f5c6b;
     transition: 0.3s;
-    transform: translateX(calc(-100% - 20px));
+    transform: translatey(calc(100% + 10px));
     cursor: pointer;
 }
 
 .projectbox:hover::before{
-    transform: translateX(0);
+    transform: translatey(0);
 }
 
 /*Team*/
@@ -173,3 +175,47 @@ hr{
     background-color: var(--dark-color);
     color: var(--light-color);
 }
+
+/*Subscribe*/
+.subscribe input{
+    border: none;
+    border-bottom: 1px solid var(--light-color);
+}
+
+.subscribe input:focus{
+    outline: none;
+}
+
+.subscribe ::placeholder{
+    color: var(--light-color);
+}
+
+/*Footer*/
+footer a{
+    text-decoration: none;
+    color: var(--light-color);
+}
+
+footer a:hover{
+    color: var(--grey-color);
+}
+
+#maghraby{
+    font-weight: bold;
+    color: var(--pink-color);
+}
+
+#Pawtech{
+    font-weight: bold;
+    color: var(--blue-color);
+}
+
+footer .main-btn{
+    font-weight: bold;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+footer a i:hover{
+    color: #6E85B7;
+}
+
