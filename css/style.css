@@ -215,7 +215,18 @@ footer .main-btn{
     font-family: 'Montserrat Alternates', sans-serif;
 }
 
-footer a i:hover{
-    color: #6E85B7;
+footer a .facebook:hover{
+    color: #1877f2;
 }
 
+footer a .twitter:hover{
+    color: #1da1f2;
+}
+
+footer a .youtube:hover{
+    color: #ff0000;
+}
+
+footer a .github:hover{
+    color: #4078c0;
+}
