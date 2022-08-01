@@ -167,6 +167,10 @@ hr{
     height: 450px;
 }
 
+.teamMember:hover{
+    transform: scale(1.1,1.1);
+}
+
 .teamMember img{
     min-height: 200px;
 }
